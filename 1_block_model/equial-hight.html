@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        html, body{
+            margin: 0;
+            /* background-color: gray; */
+        }
+        .content{
+                max-width: 1280px;
+                margin: 0 auto;
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background: #aaa;
+        }
+
+        .left{
+                flex: 0 1 256px;
+                margin-right: 20px;
+                padding: 20px;
+                background: #f5d781;
+                box-sizing: border-box;
+        }
+
+        .center{
+                flex: 1 1 600px; /* 256px + 600px + (3 * 20px) = 916px wrap down width */
+                padding: 20px;
+                background: #f58781;
+                box-sizing: border-box
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li>Side-bar item 1</li>
+                <li>Side-bar item 2</li>
+                <li>Side-bar item 3</li>
+            </ul>
+        </div>
+        <div class="center">
+            <p>Article</p>
+            <p>Article</p>
+            <p>Article</p>
+            <p>Article</p>
+            <p>Article</p>
+            <p>Article</p>
+        </div>
+    </div>
+</body>
+</html>

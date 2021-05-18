@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        body{
+            margin-top: 100px;
+            background: #aaa;
+        }
+        .wrapper{
+            width: 400px;
+            height: 400px;
+            background: #777;
+            margin: 0 auto;
+        }
+
+        .header{
+            width: 200px;
+            height: 200px;
+            background: #ff0;
+        }
+
+        .menu{
+            width: 100px;
+            height: 100px;
+            background: #00f;
+            top: -10px;
+            left: -10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header"></div>
+        <div class="menu"></div>
+    </div>
+</body>
+</html>

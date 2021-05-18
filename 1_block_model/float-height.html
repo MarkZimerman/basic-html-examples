@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        html, body{
+            margin: 10px 15px;
+            /* background-color: gray; */
+        }
+        .outer{
+            /* overflow: hidden; */
+            padding: 10px 0;
+            background: #cccccc;
+        }
+
+        .outer:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .inner{
+            background: #f5d781;
+            width: 300px;
+            height: 100px;
+            padding: 20px 10px;
+            margin: 0 20px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">Parent
+        <div class="inner">Child</div>
+        <div class="inner">Child</div>
+        <!-- <div style="clear: both;"></div> -->
+    </div>
+</body>
+</html>
